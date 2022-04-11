@@ -1,0 +1,159 @@
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("assets/Norse-Bold(1).otf")
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.page-main {
+    min-height: 100vh;  
+    display: flex;
+}
+
+.image-container {
+    width: 100%;
+    background-image: url(assets/mushroom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    max-width: 750px;
+}
+
+.blurry-img-wrapper {
+    width: 100%;
+    height: 220px;
+    background-color: #3f3f3f;
+    opacity: .4;
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Norse Bold";
+    font-size: 8rem;
+    color: white;
+}
+
+.blurry-img-wrapper img {
+    height: 200px;
+    width: auto;
+}
+
+.bold-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.bold-text {
+    margin-left: 60px;
+}
+
+.input-field-wrapper .bold-text {
+    margin-left: 0;
+}
+
+.login-container {
+    min-height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    background-color: #efefef;
+}
+
+.input-field-wrapper {
+    margin: 50px 0;
+    box-shadow: 0 5px 10px #8d8d8d;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 200px 30px 60px;
+    background: white;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 2px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.input-field label {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.input-field input {
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #E5E7EB;
+    font-size: 1.1rem;
+    padding: 0 10px;
+    transition: .1s linear
+}
+
+.input-field input:focus {
+    border: 3px solid #406cc5;
+    box-shadow: 1px 1px 4px 0px #888686;
+}
+
+.error {
+    border: 3px solid red !important;
+}
+
+.error-message {
+    color: red;
+    font-size: .9rem;
+    display: none;
+}
+
+.btn {
+    display: block;
+    width: 280px;
+    height: 65px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+    background-color: #596D48;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #3d4d30;
+}
+
+.form-bottom-text {
+    margin-left: 60px;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.form-bottom-text a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-bottom-text a:hover {
+        color: #3d4d30;
+}
